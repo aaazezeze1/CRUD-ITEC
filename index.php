@@ -1,6 +1,5 @@
 <?php 
     include("database.php");
-    include("process.php");
 ?>
 
 <!DOCTYPE html>
@@ -21,28 +20,26 @@
 <body>
     <div class="home">
         <h1 id="title">Mental Health Patient Management System</h1>
-        <h4>Patient Name (ex. Juan Dela Cruz)</h4>
         <form action="process.php" method="post">
+            <h4>Patient Name (ex. Juan Dela Cruz)</h4>
             <div class="input-group">
                 <div class="w-50 p-3">
                     <input type="text" name="patientName" placeholder="Patient Name" class="form-control">
                 </div>
             </div>
-        </form>
-        <h4>Patient Address (ex. San Pablo City)</h3>
-        <form action="process.php" method="post">
+
+            <h4>Patient Address (ex. San Pablo City)</h4>
             <div class="input-group">
                 <div class="w-50 p-3">
                     <input type="text" name="patientAddress" placeholder="Patient Address" class="form-control">
                 </div>
             </div>
+
+            <!-- <button type="submit" name="action" value="view" class="btn btn-primary">View Patients</button> -->
+            <button type="submit" name="action" value="add" class="btn btn-primary">Add Patient</button>
+            <!-- <button type="submit" name="action" value="update" class="btn btn-primary">Update Patient</button>
+            <button type="submit" name="action" value="delete" class="btn btn-danger">Delete</button> -->
         </form>
-        
-        <button type="submit" name="action" value="view" class="btn btn-primary">View Patients</button>
-        <button type="submit" name="action" value="add" class="btn btn-primary">Add Patient</button>
-        <button type="submit" name="action" value="update" class="btn btn-primary">Update Patient</button>
-        <button type="submit" name="action" value="save" class="btn btn-success">Save</button>
-        <button type="submit" name="action" value="delete" class="btn btn-danger">Delete</button>
     </div>
     <style>
         body {
@@ -63,7 +60,6 @@
         .form-control {
             margin-left: 50%;
         }
-        
     </style>
 </body>
 </html>

@@ -4,7 +4,6 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $db_name = "db_pms";
-$conn = "";
 
 // connect to mysql server
 try 

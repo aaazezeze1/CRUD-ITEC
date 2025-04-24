@@ -9,5 +9,8 @@ USE db_pms;
 
 -- DELETE *  FROM tbl_patient; 
 
+-- clear all the data from the table
+-- TRUNCATE TABLE tbl_patient;
+
 
 SELECT * FROM tbl_patient;
