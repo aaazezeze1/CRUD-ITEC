@@ -1,0 +1,28 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.home {
+    margin-top: 5%;
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+#title {
+    font-weight: bold;
+}
+
+#subtitle {
+    margin-top: 2%;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* spacing between buttons */
+    margin-top: 30px;
+}
+
+form {
+    margin: 0;
+}
